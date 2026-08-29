@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat & Listen</title>
+  <meta name="description" content="Chat & Listen — a private, respectful and supportive space to talk. Choose a session that works for you.">
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#f7f5fb;font-family:Arial,Helvetica,sans-serif}
+    .page{max-width:1536px;margin:0 auto;position:relative;line-height:0;background:#fff;box-shadow:0 0 28px rgba(40,25,90,.10)}
+    .page img{display:block;width:100%;height:auto}
+    .hotspot{position:absolute;display:block;z-index:10;border-radius:14px;text-indent:-9999px;overflow:hidden;line-height:1}
+    .hotspot:focus{outline:4px solid rgba(255,255,255,.95);box-shadow:0 0 0 7px rgba(91,45,190,.55)}
+
+    /* Top-right Book a Session */
+    .book-top{left:80.25%;top:1.45%;width:12.1%;height:4.8%}
+    /* Hero Book a Session */
+    .book-hero{left:7.7%;top:35.8%;width:14.6%;height:4.9%}
+    /* Pricing buttons */
+    .pay99{left:10.1%;top:91.1%;width:22.0%;height:3.0%}
+    .pay199{left:36.2%;top:91.1%;width:23.0%;height:3.0%}
+    .pay399{left:66.3%;top:91.1%;width:23.4%;height:3.0%}
+
+    .mobile-actions{display:none}
+    @media (max-width:700px){
+      body{background:#fff}
+      .page{box-shadow:none}
+      .mobile-actions{display:flex;gap:8px;position:sticky;bottom:0;z-index:30;padding:10px;background:rgba(255,255,255,.97);box-shadow:0 -4px 18px rgba(0,0,0,.12)}
+      .mobile-actions a{flex:1;text-decoration:none;text-align:center;padding:13px 8px;border-radius:12px;font-weight:700;color:#fff;line-height:1.2;background:#5b27c8}
+      .mobile-actions a:nth-child(2){background:#e61e62}
+      .mobile-actions a:nth-child(3){background:#087c32}
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="Chat and Listen homepage">
+    <img src="homepage.png" alt="Chat & Listen homepage with a welcoming woman, privacy features, reviews and session plans.">
+
+    <a class="hotspot book-top" href="#pricing" aria-label="Go to session booking">Book a Session</a>
+    <a class="hotspot book-hero" href="#pricing" aria-label="Go to session booking">Book a Session</a>
+
+    <span id="pricing" style="position:absolute;left:0;top:79%;width:1px;height:1px" aria-hidden="true"></span>
+    <a class="hotspot pay99" href="https://rzp.io/rzp/6KcISOZJ" target="_blank" rel="noopener" aria-label="Book Basic Session for 99 rupees">Book ₹99 Session</a>
+    <a class="hotspot pay199" href="https://rzp.io/rzp/PMU8STT" target="_blank" rel="noopener" aria-label="Book Standard Session for 199 rupees">Book ₹199 Session</a>
+    <a class="hotspot pay399" href="https://rzp.io/rzp/x6ptV8di" target="_blank" rel="noopener" aria-label="Book Premium Session for 399 rupees">Book ₹399 Session</a>
+  </main>
+
+  <nav class="mobile-actions" aria-label="Quick booking actions">
+    <a href="https://rzp.io/rzp/6KcISOZJ" target="_blank" rel="noopener">₹99</a>
+    <a href="https://rzp.io/rzp/PMU8STT" target="_blank" rel="noopener">₹199</a>
+    <a href="https://rzp.io/rzp/x6ptV8di" target="_blank" rel="noopener">₹399</a>
+  </nav>
+</body>
+</html>
